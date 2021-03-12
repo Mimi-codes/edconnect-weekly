@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <!--Bootstrap-->
+     <link rel="stylesheet" href="./css/bootstrap.min.css">
+    
+    <title>Project Explorer App</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+      <a class="navbar-brand text-light" href="#">Project Explorer</a>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" name="searchForm" placeholder="Search Projects" aria-label="Search">
+        <button class="btn btn-outline-light my-2 my-sm-0  border-light" type="submit">Search</button>
+      </form>
+
+      <a href="createProject.html" class="text-light text-decoration-none mx-3 mx-3 mr-auto p-2 bd-highlight">Submit</a>
+
+      <a href="register.html" class="d-flex justify-content-end text-light text-decoration-none pr-3">Sign up</a>
+      <a href="login.html" class="d-flex text-light text-decoration-none justify-content-end">Login</a>
+    </nav>
+    
+    <main>
+      <h2 class="mx-auto w-75">Submit Project</h2>
+      <div class="form-group">
+
+      <!-- 
+          The <br /> tags are used temporarily to achieve a vertical layout i.e to the make
+          the label appear on top of the inputs rather than on the same line i.e horizontally.
+          This will be fixed later with CSS.
+       -->
+      <form name="submitProject" class="mx-auto w-75">
+        <label for="name"  class="form-label">Project Name</label><br />
+        <input type="text" name="name" class="form-control" placeholder="Enter project name"/><br /><br />
+        <label for="abstract"  class="form-label">Project Abstract</label><br />
+        <textarea name="abstract"></textarea><br /><br />
+        <label for="authors"  class="form-label">Authors</label><br />
+        <input type="text" name="authors" class="form-control" placeholder="Enter author names (separated by comma)"/><br /><br />
+        <label class="form-label">Tag(s)</label><br />
+        <input type="text" name="tags" class="form-control" placeholder="Use # to tag project with different topics (e.g. #sjavascript #mongodb)" /><br /><br />
+        <button class="btn btn-primary" type="submit">Continue</button>
+      </form>
+    </main>
+    <footer>
+      <div class="my-3">
+        <p class="d-flex bg-light py-3 justify-content-end">Project Explorer &#169; 2020. <b>Edconnect</b></p>
+      </div>
+    </footer>
+  </body>
+</html>
